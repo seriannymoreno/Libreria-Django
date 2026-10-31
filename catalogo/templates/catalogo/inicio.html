@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Biblioteca</title>
+    <style>
+        /* Variables de color y tipografía */
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #f59e0b;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+            --text-color: #1e293b;
+            --text-light: #64748b;
+            --border-radius: 8px;
+        }
+
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #eff6ff;
+            color: var(--secondary-color);
+        }
+
+        /* Contenido principal */
+        main {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2.5rem;
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            flex: 1;
+        }
+
+        main h2 {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        main p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Botón de acción */
+        main a {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            padding: 0.75rem 1.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: var(--border-radius);
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        main a:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive para dispositivos móviles */
+        @media (max-width: 600px) {
+            main {
+                margin: 1.5rem;
+                padding: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Información de la Biblioteca</h1>
+        <p>Bienvenido al sistema de gestión bibliotecaria</p>
+    </header>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/libros/">Catálogo de libros</a>
+    </nav>
+    <main>
+        <h2>Bienvenido</h2>
+        <p>
+            Desde este sistema podras consultar el Catálogode libros de nuestra biblioteca
+        </p>
+        <a href="/libros/">Consultar libros</a>
+    </main>
+    <footer>
+        <p>Sistema de Información de la Biblioteca</p>
+    </footer>
+</body>
+</html>
